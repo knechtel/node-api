@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-, Schema = mongoose.Schema
 const Client = require('./Client')
+const Schema = mongoose.Schema
 
 const EquipmentSchema = new mongoose.Schema({
     name:{

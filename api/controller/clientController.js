@@ -23,9 +23,9 @@ module.exports = {
         Equipment.create(equipmentVar);
         return resp.json(equipmentVar)
     },
-    async getAll(req, resp) {
+    async getAll(httpMethod, opt) {
         Equipment.find({}).then(function (e) {
-            resp.send(e);
-        });
+            opt.send(e);}
+        );
     }
 };
