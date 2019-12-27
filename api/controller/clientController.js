@@ -21,6 +21,11 @@ module.exports = {
             Client:c._id    
         })
         Equipment.create(equipmentVar);
-        return resp.send("Hello World controller");
+        return resp.json(equipmentVar)
     },
+    async getAll(req, resp) {
+        Equipment.find({}).then(function (e) {
+            resp.send(e);
+        });
+    }
 };

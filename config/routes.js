@@ -5,5 +5,6 @@ const clientService = require("../api/controller/clientController")
 // routes.get('/api',(req,resp) =>{
 //     resp.send("Hello World");
 // });
-routes.get("/api/test",clientService.getTest)
+routes.get("/api/Equipament",clientService.getTest)
+routes.get("/api/Equipament/all",clientService.getAll)
 module.exports = routes;

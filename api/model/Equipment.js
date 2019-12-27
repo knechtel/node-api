@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
-const Client = require('./Client')
+const mongoose = require('mongoose')
 , Schema = mongoose.Schema
+const Client = require('./Client')
+
 const EquipmentSchema = new mongoose.Schema({
     name:{
         type: String,
