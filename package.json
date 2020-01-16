@@ -11,6 +11,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }  
+  }
+  ,
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -20,6 +26,8 @@
     "require-dir": "^1.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "cz-conventional-changelog": "^3.0.2",
     "nodemon": "^2.0.2"
   },
