@@ -5,6 +5,7 @@ requireDir('../model/');
 
 const Client = mongoose.model('Client');
 const Equipment = mongoose.model('Equipment');
+
 module.exports = {
     async getTest(req, resp) {
         var c = await new Client({
