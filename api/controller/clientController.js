@@ -1,8 +1,6 @@
 
 const requireDir = require('require-dir')
-const restful = require('node-restful')
-const mongoose = restful.mongoose
-mongoose.connect('mongodb://localhost/db_node_api', { useNewUrlParser: true, useUnifiedTopology: true });
+const mongoose = require('../../config/database')
 requireDir('../model/');
 
 const Client = mongoose.model('Client');
@@ -24,6 +22,7 @@ module.exports = {
         return resp.json(equipmentVar)
     },
     async getAll(httpMethod, opt) {
+        
         Equipment.find({}).then(function (e) {
             opt.send(e);}
         );
