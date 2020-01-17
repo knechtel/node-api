@@ -21,5 +21,4 @@ const EquipmentSchema = new mongoose.Schema({
     },
     Client : { type: Schema.Types.ObjectId, ref: 'Client' }
 });
-
 mongoose.model('Equipment',EquipmentSchema);
