@@ -1,0 +1,17 @@
+{
+	"client":{
+	"name": "Mical smith",
+    "address": "EUA, Porto Alegre"
+	},
+	    "Equipment": 
+        {
+     
+            "name": "camera",
+            "model": "LCDPV",
+            "serial": "1394599",
+            "Client": "5e21452eed9a933f2b7731e3",
+            "createdAt": "2020-01-17T05:25:02.119Z"
+        }
+    
+	
+}

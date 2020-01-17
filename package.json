@@ -27,11 +27,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "commitizen": "4.0.3",
-    "cz-conventional-changelog": "3.0.2",
-    "init": "0.1.2",
-    "nodemon": "^2.0.2",
-    "husky": "4.0.10"
+    "cz-conventional-changelog": "^3.0.2",
+    "nodemon": "^2.0.2"
   },
   "config": {
     "commitizen": {
